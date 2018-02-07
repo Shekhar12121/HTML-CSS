@@ -1,0 +1,41 @@
+<script src="jquery/jquery.js"></script>
+<script>
+$(function(){
+   $(".trigger").on("click", function() {
+   $(this).toggleClass("clicking");  <!-- "toggleClass" is a jquery event name which is used for toggle the css class --> clicking is className-->
+});
+});
+
+</script>
+<style>
+body {
+  padding: 50px;
+}
+
+.trigger {
+  width: 100px;
+  height: 100px;
+  border: 20px solid #999;
+  background: #ddd;
+}
+
+.box {
+  display: inline-block;
+  background: pink;
+  width: 100px;
+  height: 100px;
+  transition: transform 300ms cubic-bezier(0, 0.47, 0.32, 1.97);
+  pointer-events: none;
+}
+
+.trigger.clicking .box {
+   transform: translate(200px, 150px) rotate(20deg);
+}
+</style>
+<body>
+<div class="trigger">
+  <div class="box"></div>
+</div>
+</body>
+
+

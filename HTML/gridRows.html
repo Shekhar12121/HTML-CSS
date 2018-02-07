@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>column</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #content{
+            display:grid;
+            grid-template-columns:repeat(3,1fr) ;
+            /*grid-template-rows: repeat(3,200px);  !*3 column each have equal 200px height*!*/
+            grid-template-rows: 100px 200px 300px;
+            max-width:960px;
+            margin: 0 auto;
+
+        }
+        #content div{
+            background-color:#3bbced;
+            padding: 25px;
+        }
+        #content div:nth-child(even){
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div>
+</body>
+</html>

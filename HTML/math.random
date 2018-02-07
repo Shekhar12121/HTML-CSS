@@ -1,0 +1,10 @@
+<script>
+a=10;
+b=5;
+if(a==b){
+alert("Both value are same");}
+else{
+alert("value are not same");
+}
+
+</script>

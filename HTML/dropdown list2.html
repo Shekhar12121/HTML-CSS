@@ -1,0 +1,73 @@
+<style>
+body{
+margin:100px;
+}
+ul{
+padding:0;
+}
+
+ul li{
+list-style:none;
+float:left;
+cell-padding:5px;
+}
+
+ul li a{
+text-decoration:none;
+padding:10px;
+display:block;
+background-color:black;
+color:white;
+
+}
+ul li ul li{
+float:none;
+}
+
+ul li ul{
+display:none;
+}
+ul li:hover ul{
+display:block;
+position:absolute;
+}
+
+ul li ul li a{
+border-top:1px solid silver;
+
+}
+ul li:hover a{
+background-color:green;
+
+}
+
+ul li ul li #hs:hover{
+background-color:orange;
+
+}
+
+
+ul li ul li #ss:hover{
+background-color:red;
+}
+
+
+ul li ul li #ns:hover{
+background-color:pink;
+}
+</style>
+
+<ul>
+<li><a href="#"> Home </a></li>
+
+  <li>
+<a href="#"> Services </a>
+  <ul>
+    <li><a href="#" id="hs"> Hardware Services </a></li>
+    <li><a href="#" id="ss"> software Services </a></li>
+    <li><a href="#" id="ns"> No Service </a></li>
+  </ul>
+</li>
+
+<li> <a href="#"> Help </a></li>
+</ul>

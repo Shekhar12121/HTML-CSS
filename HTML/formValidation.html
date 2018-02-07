@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+     function checkEmail() {
+         var emal= document.getElementById("txtEml").value;
+         if(emal=="" || emal=null)
+         {
+             alert("Please fill email!")
+         }
+         else
+         {
+             alert("Successful")
+         }
+     }
+    </script>
+    <style>
+        form #content{
+            box-sizing: padding-box;
+            border: 2px solid grey;
+            width: 25%;
+            padding-top: 10px;
+        }
+        input:hover{
+            box-shadow: 5px 5px 8px cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+  <form action="" method="post" name="form1">
+      <div id="content" align="center">
+    Name: <input type="text" name="txtName" required><br /> <br />
+    Email: <input type="email" name="txtEml" id="txtEml" onmouseout="checkEmail()" required><br /> <br />
+    Password: <input type="password" name="txtPwd" required><br /> <br />
+    Re-Pass: <input type="password" name="rePwd" required><br /> <br />
+    Name: <input type="text" name="txtName" required><br /> <br />
+          <button value="submit" style="cursor: pointer">Submit</button>
+      </div>
+  </form>
+</body>
+</html>
